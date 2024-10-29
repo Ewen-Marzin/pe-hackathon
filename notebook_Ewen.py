@@ -52,3 +52,9 @@ df.pivot_table(values = 'disc_year', index = 'disc_facility', columns = 'sy_pnum
 df.pivot_table(values = 'disc_year', index = 'disc_facility', columns = 'sy_pnum', aggfunc = min)
 
 # %%
+df.groupby(['disc_year', 'discoverymethod']).count()
+
+# %%
+df.hist(['disc_year'], bins = 5, color = 'red')
+
+# %%
